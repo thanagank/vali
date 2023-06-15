@@ -1,0 +1,21 @@
+body{
+    background-color: antiquewhite;
+       font-family: poppins , sans-serif;
+    text-align: center;
+}
+
+.vali{
+    text-align: center;
+    margin: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    float: left;
+}
+
+form{
+    float: left;
+}
+
+span{
+    float: left;
+}

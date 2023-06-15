@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <div class="vali">
+        <h2>Validation</h2>
+
+        <form name="myForm" action="https://rubankarthick.github.io/vali/login.html" >
+            <span>
+
+                Name: <input type="text" placeholder="name" onkeydown="return/[a-z]/i.test(event.key)" name="fname"><br>
+                <br>
+                AGE: <input type="text"  onkeydown="return/[0-9]/i.test(event.key)" name="fname"><br>
+                <br>
+
+                D.O.B:<input type="date"><br><br>Email ID:<input type="text">
+                <br><br>
+                YEAR: <select>
+                    <option>1ST</option>
+                    <OPTION>2ND</OPTION>
+                    <option>3RD</option>
+                    <option>4TH</option>
+                </select>
+                COURSE: <select type="text" >
+                    <option>BE-EEE</option>
+                    <option>BE-MECH</option>
+                    <option>BE-CSE</option>
+                    <option>BE-ECE</option></select><br><br>
+                    
+                ADDRESS:  <input type="text"><br><br>
+                ADHAR CARD NUMBER: <input type="text" onkeydown="return/[0-9]/i.test(event.key)"><br><br>
+                PHONE NUMBER: <input type="text"  onkeydown="return/[0-9]/i.test(event.key)"><br><br>  
+
+
+            </span>
+
+
+
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
